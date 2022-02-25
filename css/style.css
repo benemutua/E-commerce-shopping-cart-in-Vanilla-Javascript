@@ -1,0 +1,257 @@
+.nav-bar{
+    width: 100%;
+    height: 70px;
+    background: blueviolet;
+    color: white;
+    font-size: 16px;
+    padding-top: 30px;
+    top: -20px !important;
+    position: sticky;
+    position: -webkit-sticky;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-bar ul{
+    list-style: none;
+    display: flex;
+}
+.nav-bar ul li{
+    margin-right: 20px;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: white;
+}
+
+.my-shopping-cart{
+    margin-top: -10px;
+    position: absolute;
+color: black;
+font-weight: bold;
+background-color: white;
+padding: 8px;
+padding-top: 3px; padding-bottom: 3px;
+border-radius: 20px;
+}
+
+.product-listing{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+.product-listing .item-container{
+    width: 180px;
+    height: 250px;
+    border: 1px solid gainsboro;
+    margin: 10px;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+}
+.product-listing .item-container img{
+    width: inherit;
+    height: 150px;
+}
+.product-listing .item-container p{
+    margin: 3px;
+}
+
+.add-to-cart-btn{
+    padding: 6px;
+    border: none;
+    background-color: blueviolet;
+    border-radius: 10px;
+    color: white;
+    width: 100px;
+    cursor: pointer;
+}
+
+/* basket page*/
+.basket-header{
+    width: 600px;
+    background: ghostwhite;
+    margin: auto;
+    border: 1px solid gainsboro;
+    margin-top: 10px;
+}
+
+.basket-header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.basket-header ul li{ width: 30%; }
+
+.main-basket{
+    width: 600px;
+    margin: auto;
+    margin-top: 10px;
+}
+.cart-items-pane{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cart-items-pane .category{
+    width: 30%;
+    height: 35px;
+    border-bottom: 2px solid gainsboro;
+}
+.centered{ text-align: center !important;}
+/*below div will show if cart has no data*/
+.main-basket .empty-cart{text-align: center;}
+.main-basket .empty-cart h3{color: rgb(168, 166, 166);}
+.main-basket .empty-cart a{color:blueviolet; text-decoration: none;}
+
+
+.parent-other-stuffs{
+    width: 290px;
+    margin: auto;
+    text-align: center;
+}
+
+.parent-other-stuffs button{
+border: none;
+color: white;
+border-radius: 5px;
+background-color: blueviolet;
+padding: 8px;
+cursor: pointer;
+}
+
+.hidden{display: none;}
+
+.value-class{color: black !important; font-size: 13px !important;}
+
+
+.deductCart, .addCart{
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 20px;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+/* the checkout form */
+.information-box{
+    width: 750px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: blueviolet;
+    padding: 8px;
+    margin-top: 15px;
+}
+.information-box p{
+    margin: 0;
+    color: white;
+    text-align: center;
+    
+}
+.checkout-form{
+    margin: auto;
+    width: 800px;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.checkout-form .row-division{
+    width: 48%;
+    padding: 5px;
+}
+.checkout-form .row-division h4{
+    font-size: 16px;
+    color: blueviolet;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.checkout-form .row-division .form-submit{
+    width: 100%;
+    margin-top: 10px;
+}
+.checkout-form .row-division .cart-main-pane{
+    width: 99%;
+    border: 1px solid gainsboro;
+    border-style: dotted;
+    padding: 10px;
+    background-color: ghostwhite;
+}
+
+/*the calculator div*/
+.checkout-form .row-division .cart-main-pane .total-calculator{
+    width: 100%;
+    text-align: center;
+}
+ .total-calculator p{
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 2px;
+    text-align: right;
+}
+.total-calculator p span{
+    color: #222;
+}
+
+
+/*the cart items*/
+.checkout-form .row-division .cart-main-pane .item-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    color: gray;
+    font-weight: 300;
+}
+.cart-main-pane .item-container .pname-window{
+    width: 30%;
+    display: block;
+    border-bottom: 1px solid gainsboro;
+    height: 35px;
+    color: black;
+}
+.cart-main-pane .item-container .pquantity-window{
+    width: 30%;
+    display: block;
+    border-bottom: 1px solid gainsboro;
+    height: 35px;
+}
+.cart-main-pane .item-container .ptotals-window{
+    width: 30%;
+    display: block;
+    border-bottom: 1px solid gainsboro;
+    height: 35px;
+}
+
+
+.checkout-form label{
+    font-size: 14px;
+    color: gray;
+}
+
+.form-control{color: gray !important;}
+
+@media screen and (max-width: 820px){
+    .information-box, .checkout-form{
+        width: 98%;
+    }
+    .cart-main-pane{font-size: 12px;}
+}
+
+@media screen and (max-width: 600px){
+ .basket-header, .main-basket{ width: 100%; }
+ .checkout-form{width: 100%;}
+}
+
+@media screen and (max-width: 410px){
+    .checkout-form{display: block;padding: 5px; width: 99%;}
+
+    .checkout-form .row-division{width: 98%; margin: auto; margin-bottom: 10px;}
+    .cart-main-pane{font-size: 13px;}
+}

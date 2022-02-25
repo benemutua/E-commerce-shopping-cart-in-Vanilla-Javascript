@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping cart example by benesoft</title>
+    <link rel="shortcut icon" href="img/linux-logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+
+</head>
+<body>
+    
+<div class="nav-bar">
+<ul>
+    <a href="index.html"><li>Home</li></a>
+   <a href="basket.html"> <li>Shopping cart<span class="my-shopping-cart">0</span></li></a>
+</ul>
+</div>
+
+
+<div class="information-box">
+    <p>Please fill in all data to place your order</p>
+</div>
+
+<form action="" method="post" class="checkout-form">
+    <div class="row-division">
+        <label for="">First Name</label>
+        <input type="text" name="firstName" class="form-control">
+        <label for="">Other Names</label>
+        <input type="text" name="otherNames" class="form-control">
+
+        <label for="">Phone number</label>
+        <input type="number" name="mobileNumber" class="form-control">
+
+        <label for="">Email</label>
+        <input type="email" name="emailAddress" class="form-control">
+
+        <label for="">Delivery Address</label>
+        <input type="text" name="deliveryAddress" class="form-control">
+    </div>
+
+    <div class="row-division">
+        <label for="">Delivery Terms</label>
+        <select name="deliveryTerms" id="delivery-terms" class="form-control" onchange="getDelivery()">
+            <option value="">-select-</option>
+            <option value="cbd">CBD</option>
+            <option value="around cbd">Areas just next to CBD</option>
+        </select>
+
+        <h4>cart data</h4>
+        <div class="cart-main-pane">
+            <!--the cart will show here-->
+        </div>
+
+        <div class="total-calculator"><!--the totals math calc div-->
+            <p>Items Subtotals(Kes): <span class="item-sub"></span></p>
+            <p>Delivery Charge(Kes): <span class="delivery-charge">--</span></p>
+            <p>Total to pay(Kes): <span class="net-totals"></span></p>
+        </div>
+        <div class="form-submit">
+            <button type="submit" class="btn btn-primary submit-btn" disabled onclick="clearCartData()">Place order</button>
+        </div>
+    </div>
+
+</form>
+
+<script src="js/checkoutscript.js"></script>
+<script src="js/mainjava.js"></script>
+</body>
+</html>

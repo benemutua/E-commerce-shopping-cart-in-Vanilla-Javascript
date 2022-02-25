@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping cart example by benesoft</title>
+    <link rel="shortcut icon" href="img/linux-logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<div class="nav-bar">
+<ul>
+    <a href="index.html"><li>Home</li></a>
+   <a href="basket.html"> <li>Shopping cart<span class="my-shopping-cart">0</span></li></a>
+</ul>
+</div>
+
+
+
+<!--the basket begins-->
+<div class="basket-header">
+    <ul>
+        <li>Product Name</li>
+        <li>Quantity</li>
+        <li>Subtotals</li>
+    </ul>
+</div>
+
+
+<div class="main-basket">
+<!--the cart data will be listed here-->
+</div>
+
+<div class="parent-other-stuffs">
+    <h5 id="costArea"></h5>
+    <button class="clearCart" onclick="clearCart()">Clear Cart</button>
+    <button type="button" class="checkoutbtn" onclick="window.location.href='checkout.html'">Checkout</button>
+</div>
+
+</body>
+<script src="js/mainjava.js"></script>
+<script src="js/cartJs.js"></script>
+</html>
